@@ -1,3 +1,14 @@
+# download Cosmopolitan Libc from https://justine.lol/cosmopolitan/cosmopolitan.zip
+libcosmo/*
+!libcosmo/README.md
+# download with UBSAN support from https://justine.lol/cosmopolitan/cosmopolitan-dbg.zip
+libcosmo-dbg/*
+!libcosmo-dbg/README.md
+
+# executables
+*.com
+*.com.dbg
+
 # Prerequisites
 *.d
 
