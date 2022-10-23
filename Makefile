@@ -20,7 +20,7 @@ CFLAGS = -g3 -O2 -static -nostdlib -nostdinc -fno-pie -no-pie -mno-red-zone \
 LDFLAGS = -fuse-ld=bfd -Wl,-T,$(COSMODIR)/ape.lds -Wl,--gc-sections \
   $(COSMODIR)/crt.o $(COSMODIR)/ape-no-modify-self.o $(COSMODIR)/cosmopolitan.a
 
-BINS = hex16.com
+BINS = hex16.com hex16-backtrace.com
 DBG_BINS = $(BINS:%=%.dbg)
 
 all: $(BINS) $(DBG_BINS)
