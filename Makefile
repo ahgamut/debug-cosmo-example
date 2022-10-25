@@ -12,7 +12,7 @@ ifeq ($(MODE), dbg)
 	DBGFLAGS = -fsanitize=address -fsanitize=undefined
 endif
 
-CFLAGS = -g3 -O2 -static -nostdlib -nostdinc -fno-pie -no-pie -mno-red-zone \
+CFLAGS = -Wall -g3 -O2 -static -nostdlib -nostdinc -fno-pie -no-pie -mno-red-zone \
   -fno-omit-frame-pointer -pg -mnop-mcount -mno-tls-direct-seg-refs -gdwarf-4 \
   $(DBGFLAGS) \
   -I./header_stubs -include $(COSMODIR)/cosmopolitan.h
